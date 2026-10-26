@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seven-day weather forecast for Shepherdstown, WV.">
+    <title>7-Day Forecast | Shepherdstown Weather</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/forecast.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Shepherdstown Weather</a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="forecast.html">7-Day Forecast</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p class="eyebrow">PLAN AHEAD</p>
+            <h1>7-Day Weather Forecast</h1>
+            <p>Daily weather conditions for Shepherdstown, West Virginia.</p>
+        </section>
+
+        <p id="forecast-status" class="status" role="status">
+        </p>
+
+        <section class="section">
+            <div id="weekly-forecast" class="weekly-list">
+            </div>
+        </section>
+
+        <p class="data-credit">
+            Forecast supplied by
+            <a href="https://open-meteo.com/" target="_blank"
+               rel="noopener noreferrer">Open-Meteo</a>.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <p>Shepherdstown Weather &copy; 2026</p>
+    </footer>
+</body>
+</html>

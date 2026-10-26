@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Current weather and forecast for Shepherdstown, West Virginia.">
+    <title>Shepherdstown Weather | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/weather.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Shepherdstown Weather</a>
+
+        <nav aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="forecast.html">7-Day Forecast</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p class="eyebrow">YOUR LOCAL WEATHER</p>
+            <h1>Weather in Shepherdstown, WV</h1>
+        </section>
+
+        <p id="weather-status" class="status" role="status">
+            Loading the latest weather...
+        </p>
+
+        <section class="weather-card" aria-label="Current weather">
+            <div class="weather-main">
+                <div>
+                    <p class="eyebrow">CURRENT CONDITIONS</p>
+                    <h2 id="current-condition">Loading...</h2>
+                    <p id="current-date" class="muted">Local weather</p>
+                </div>
+
+                <div class="temperature">
+                    <span id="current-icon" class="weather-icon"
+                          aria-hidden="true">🌤️</span>
+                    <span id="current-temp">--</span><span>°F</span>
+                </div>
+            </div>
+
+            <p id="feels-like" class="muted">Feels like --°F</p>
+
+            <div class="weather-details">
+                <div class="detail">
+                    <span>Wind speed</span>
+                    <strong id="wind-speed">-- mph</strong>
+                </div>
+                <div class="detail">
+                    <span>Humidity</span>
+                    <strong id="humidity">--%</strong>
+                </div>
+                <div class="detail">
+                    <span>Today's high</span>
+                    <strong id="today-high">--°F</strong>
+                </div>
+                <div class="detail">
+                    <span>Today's low</span>
+                    <strong id="today-low">--°F</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">COMING UP</p>
+                    <h2>Next three days</h2>
+                </div>
+                <a href="forecast.html">Full forecast →</a>
+            </div>
+
+            <div id="home-forecast" class="forecast-grid">
+                <p>Loading forecast...</p>
+            </div>
+        </section>
+
+        <p class="data-credit">
+            Weather data provided by
+            <a href="https://open-meteo.com/" target="_blank"
+               rel="noopener noreferrer">Open-Meteo</a>.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <p>Shepherdstown Weather &copy; 2026</p>
+        <p>Weather information is provided for general planning.</p>
+    </footer>
+</body>
+</html>
